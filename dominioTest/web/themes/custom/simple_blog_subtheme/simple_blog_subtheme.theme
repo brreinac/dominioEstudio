@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Theme functions for simple_blog_subtheme.
+ */
+
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implement hook_preprocess_page().
+ */
+function simple_blog_subtheme_preprocess_page(&$variables) {
+  // Agregar clases de body o variables extra si se necesita.
+}
+
+/**
+ * Implement hook_theme().
+ */
+function simple_blog_subtheme_theme($existing, $type, $theme, $path) {
+  return [];
+}

@@ -1,0 +1,11 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+  js:
+    # JS personalizado:
+    # js/script.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - bootstrap_barrio/bootstrap

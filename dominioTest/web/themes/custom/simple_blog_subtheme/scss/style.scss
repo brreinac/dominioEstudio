@@ -1,0 +1,26 @@
+// Importa variables y componentes
+@import 'variables';
+@import 'components';
+
+// Usa variables para personalizar Bootstrap si lo deseas (se puede extender).
+body {
+  font-family: $font-family-base;
+}
+
+.header {
+  background: linear-gradient(180deg, #fff, #f8f9fa);
+}
+
+a {
+  color: $primary-color;
+  &:hover {
+    color: darken($primary-color, 8%);
+  }
+}
+
+/* Opcional: modo oscuro (simple toggle vía body.dark-mode) */
+body.dark-mode {
+  background: $dark-bg;
+  color: $dark-text;
+  .navbar { background: #1c1c1c; }
+}

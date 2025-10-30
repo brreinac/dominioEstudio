@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.header-navbar .navbar {
+  padding: 0.75rem 1rem;
+}
+.header-navbar .site-logo {
+  max-height: 48px;
+}
+
+.blog-card .card {
+  margin-bottom: 1.25rem;
+}
+.blog-card .card .card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.blog-card .card .card-meta {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.header {
+  background: linear-gradient(180deg, #fff, #f8f9fa);
+}
+
+a {
+  color: #0d6efd;
+}
+a:hover {
+  color: rgb(1.8459016393, 91.3721311475, 223.3540983607);
+}
+
+/* Opcional: modo oscuro (simple toggle vía body.dark-mode) */
+body.dark-mode {
+  background: #121212;
+  color: #eaeaea;
+}
+body.dark-mode .navbar {
+  background: #1c1c1c;
+}

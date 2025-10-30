@@ -1,0 +1,23 @@
+<div class="blog-card">
+  <div class="card h-100">
+    {% if content.field_image %}
+      <div class="card-img-top">
+        {{ content.field_image }}
+      </div>
+    {% endif %}
+    <div class="card-body">
+      <h5 class="card-title">
+        <a href="{{ url }}">{{ label }}</a>
+      </h5>
+      <p class="card-meta">
+        {{ node.field_categoria.entity.label }} • {{ node.getCreatedTime()|date("d M Y") }}
+      </p>
+      <p class="card-text">
+        {{ content.body|striptags|trim|slice(0,200) ~ '...' }}
+      </p>
+    </div>
+    <div class="card-footer">
+      <a href="{{ url }}" class="btn btn-sm btn-primary">Leer más</a>
+    </div>
+  </div>
+</div>

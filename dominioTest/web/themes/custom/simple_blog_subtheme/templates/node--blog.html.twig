@@ -1,0 +1,19 @@
+<article class="node--blog container">
+  <header class="mb-3">
+    <h1 class="display-6">{{ label }}</h1>
+    <div class="meta text-muted">
+      <span class="me-2">{{ node.field_categoria.entity.label }}</span> |
+      <span class="ms-2">{{ node.getCreatedTime()|date("d M Y") }}</span>
+    </div>
+  </header>
+
+  {% if content.field_image %}
+    <div class="mb-3">
+      {{ content.field_image }}
+    </div>
+  {% endif %}
+
+  <div class="content">
+    {{ content.body }}
+  </div>
+</article>
