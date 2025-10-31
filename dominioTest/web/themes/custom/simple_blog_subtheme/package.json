@@ -1,0 +1,11 @@
+{
+  "name": "simple_blog_subtheme",
+  "version": "1.0.0",
+  "devDependencies": {
+    "sass": "^1.72.0"
+  },
+  "scripts": {
+    "build:css": "sass --no-source-map scss/style.scss:css/style.css",
+    "watch:css": "sass --watch scss/style.scss:css/style.css"
+  }
+}

@@ -1,9 +1,12 @@
-<article class="node--blog container">
-  <header class="mb-3">
+{# templates/node--blog.html.twig #}
+<article class="node--blog container my-4">
+  <header class="mb-4">
     <h1 class="display-6">{{ label }}</h1>
-    <div class="meta text-muted">
-      <span class="me-2">{{ node.field_categoria.entity.label }}</span> |
-      <span class="ms-2">{{ node.getCreatedTime()|date("d M Y") }}</span>
+    <div class="meta text-muted mb-2">
+      {% if categoria_label is defined and categoria_label %}
+        <span class="me-2">{{ categoria_label }}</span> |
+      {% endif %}
+      <span class="ms-2">{{ published_date }}</span>
     </div>
   </header>
 

@@ -1,23 +1,27 @@
-<div class="blog-card">
+{# templates/node--blog--teaser.html.twig #}
+<article class="blog-card mb-4">
   <div class="card h-100">
     {% if content.field_image %}
-      <div class="card-img-top">
+      <div class="ratio ratio-16x9">
         {{ content.field_image }}
       </div>
     {% endif %}
-    <div class="card-body">
+    <div class="card-body d-flex flex-column">
       <h5 class="card-title">
-        <a href="{{ url }}">{{ label }}</a>
+        <a href="{{ url }}" class="stretched-link text-decoration-none">{{ label }}</a>
       </h5>
-      <p class="card-meta">
-        {{ node.field_categoria.entity.label }} • {{ node.getCreatedTime()|date("d M Y") }}
+      <p class="card-meta text-muted mb-2">
+        {% if categoria_label is defined and categoria_label %}
+          <span class="badge bg-secondary me-2">{{ categoria_label }}</span>
+        {% endif %}
+        <small>{{ published_date }}</small>
       </p>
-      <p class="card-text">
-        {{ content.body|striptags|trim|slice(0,200) ~ '...' }}
+      <p class="card-text mb-3">
+        {{ content.body|striptags|trim|slice(0,180) ~ '...' }}
       </p>
-    </div>
-    <div class="card-footer">
-      <a href="{{ url }}" class="btn btn-sm btn-primary">Leer más</a>
+      <div class="mt-auto">
+        <a href="{{ url }}" class="btn btn-sm btn-primary">Leer más</a>
+      </div>
     </div>
   </div>
-</div>
+</article>

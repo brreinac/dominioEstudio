@@ -1,10 +1,13 @@
-{# Header con navbar Bootstrap #}
+{# templates/page.html.twig #}
 <header class="header">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="{{ path('<front>') }}">
-        <img src="{{ directory }}/logo.svg" alt="Logo" class="site-logo" style="max-height:48px;">
-        <span class="ms-2">Simple Blog</span>
+        {% if logo %}
+          <img src="{{ logo }}" alt="Logo" class="site-logo" style="max-height:48px;">
+        {% else %}
+          <span class="fs-5">Simple Blog</span>
+        {% endif %}
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
@@ -12,7 +15,11 @@
       </button>
 
       <div class="collapse navbar-collapse" id="mainNavbar">
-        {{ page.primary_menu }}
+        {% if page.primary_menu %}
+          <div class="ms-auto">
+            {{ page.primary_menu }}
+          </div>
+        {% endif %}
       </div>
     </div>
   </nav>
@@ -20,10 +27,10 @@
 
 <main class="container mt-4">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-lg-8">
       {{ page.content }}
     </div>
-    <aside class="col-md-4">
+    <aside class="col-lg-4">
       {{ page.sidebar_first }}
     </aside>
   </div>

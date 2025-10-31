@@ -1,26 +1,24 @@
-// Importa variables y componentes
+// style.scss
 @import 'variables';
 @import 'components';
 
-// Usa variables para personalizar Bootstrap si lo deseas (se puede extender).
+:root {
+  --bs-primary: #{$primary-color};
+}
+
 body {
   font-family: $font-family-base;
+  background: $body-bg;
+  color: $body-text;
 }
 
-.header {
-  background: linear-gradient(180deg, #fff, #f8f9fa);
-}
+a { color: $primary-color; }
+a:hover { color: darken($primary-color, 8%); }
 
-a {
-  color: $primary-color;
-  &:hover {
-    color: darken($primary-color, 8%);
-  }
-}
-
-/* Opcional: modo oscuro (simple toggle vía body.dark-mode) */
+/* dark mode toggle */
 body.dark-mode {
   background: $dark-bg;
   color: $dark-text;
   .navbar { background: #1c1c1c; }
+  .card { background: #1b1b1b; color: $dark-text; }
 }

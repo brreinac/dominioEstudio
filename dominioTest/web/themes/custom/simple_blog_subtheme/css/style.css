@@ -1,43 +1,56 @@
-@charset "UTF-8";
-.header-navbar .navbar {
+/* Dark mode variables */
+.header .navbar {
   padding: 0.75rem 1rem;
+  background: linear-gradient(180deg, #fff, #f8f9fa);
 }
-.header-navbar .site-logo {
+
+.site-logo {
   max-height: 48px;
 }
 
 .blog-card .card {
-  margin-bottom: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.03);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.blog-card .card .card-title {
-  font-size: 1.125rem;
-  font-weight: 600;
+.blog-card .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.06);
 }
-.blog-card .card .card-meta {
-  font-size: 0.875rem;
-  color: #6c757d;
+.blog-card .card-title a {
+  color: #0d6efd;
+}
+.blog-card .card-meta .badge {
+  font-size: 0.8rem;
+}
+
+:root {
+  --bs-primary: #0d6efd;
 }
 
 body {
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-.header {
-  background: linear-gradient(180deg, #fff, #f8f9fa);
+  background: #ffffff;
+  color: #212529;
 }
 
 a {
   color: #0d6efd;
 }
+
 a:hover {
   color: rgb(1.8459016393, 91.3721311475, 223.3540983607);
 }
 
-/* Opcional: modo oscuro (simple toggle vía body.dark-mode) */
+/* dark mode toggle */
 body.dark-mode {
   background: #121212;
   color: #eaeaea;
 }
 body.dark-mode .navbar {
   background: #1c1c1c;
+}
+body.dark-mode .card {
+  background: #1b1b1b;
+  color: #eaeaea;
 }
