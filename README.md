@@ -28,3 +28,5 @@ git clone https://github.com/brreinac/dominioEstudio.git
 Usuarios
 
 dominio / dominio
+
+admin/dominio
