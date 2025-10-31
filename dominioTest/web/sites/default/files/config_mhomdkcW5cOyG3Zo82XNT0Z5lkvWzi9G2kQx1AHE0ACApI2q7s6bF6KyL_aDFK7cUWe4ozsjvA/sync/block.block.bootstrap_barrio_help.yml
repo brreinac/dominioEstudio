@@ -1,0 +1,20 @@
+uuid: 5f1ecbb3-00c6-4bd0-8177-ec3667309c6c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: b6CHwczHyuqKRuf-Oi4zY6q-9HCsLyWRGkk8-reVCfk
+id: bootstrap_barrio_help
+theme: bootstrap_barrio
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

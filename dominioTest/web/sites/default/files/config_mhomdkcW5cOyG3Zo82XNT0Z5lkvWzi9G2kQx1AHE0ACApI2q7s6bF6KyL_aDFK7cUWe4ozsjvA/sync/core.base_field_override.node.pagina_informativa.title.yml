@@ -1,0 +1,18 @@
+uuid: 8f2de0a8-5e36-44ef-a280-5b0e8edf921a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pagina_informativa
+id: node.pagina_informativa.title
+field_name: title
+entity_type: node
+bundle: pagina_informativa
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

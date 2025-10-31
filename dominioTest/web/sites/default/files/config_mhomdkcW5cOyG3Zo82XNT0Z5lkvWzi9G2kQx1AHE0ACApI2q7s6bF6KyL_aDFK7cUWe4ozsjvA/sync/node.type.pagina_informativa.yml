@@ -1,0 +1,11 @@
+uuid: 094386e8-296c-4b4e-967b-3c02c58380b6
+langcode: en
+status: true
+dependencies: {  }
+name: 'Página informativa'
+type: pagina_informativa
+description: "Nombre: Página informativa\r\n\r\nCampos: body (texto largo)."
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

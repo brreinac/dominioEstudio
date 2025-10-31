@@ -1,0 +1,28 @@
+uuid: f39a0f3b-7de1-4b1f-b0fa-4a8b025a3b8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_informativa.body
+    - node.type.pagina_informativa
+  module:
+    - text
+    - user
+id: node.pagina_informativa.default
+targetEntityType: node
+bundle: pagina_informativa
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

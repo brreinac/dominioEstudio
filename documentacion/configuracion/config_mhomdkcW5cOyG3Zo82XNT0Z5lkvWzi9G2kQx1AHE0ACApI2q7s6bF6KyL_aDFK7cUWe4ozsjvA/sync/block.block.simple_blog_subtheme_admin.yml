@@ -1,0 +1,27 @@
+uuid: 8621e2ae-b06a-4b94-914e-8ed900d25f32
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - simple_blog_subtheme
+_core:
+  default_config_hash: O-D8Nl1TR7UCNonzFkR4yexcwpIbqT5arx6HdRFMzYU
+id: simple_blog_subtheme_admin
+theme: simple_blog_subtheme
+region: sidebar_first
+weight: 1
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Administration
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

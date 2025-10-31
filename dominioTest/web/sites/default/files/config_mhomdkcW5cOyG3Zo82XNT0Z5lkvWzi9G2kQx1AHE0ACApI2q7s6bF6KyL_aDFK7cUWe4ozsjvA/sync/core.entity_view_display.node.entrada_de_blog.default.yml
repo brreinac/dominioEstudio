@@ -1,0 +1,70 @@
+uuid: db157df4-e47d-490b-9697-d276d46c8d91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.entrada_de_blog.body
+    - field.field.node.entrada_de_blog.field_field_categoria
+    - field.field.node.entrada_de_blog.field_field_fecha
+    - field.field.node.entrada_de_blog.field_field_image
+    - node.type.entrada_de_blog
+  module:
+    - image
+    - text
+    - user
+id: node.entrada_de_blog.default
+targetEntityType: node
+bundle: entrada_de_blog
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_field_categoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_field_fecha:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_field_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,11 @@
+uuid: 5bf69259-028b-4386-b11c-56a1275c218f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Entrada de blog'
+type: entrada_de_blog
+description: "field_image — Tipo: Imagen — Etiqueta: Imagen destacada.\r\n\r\nbody — ya viene (texto largo con resumen).\r\n\r\nfield_categoria — Tipo: Referencia a término — Vocabulario: categorias_blog (crear más abajo).\r\n\r\nfield_fecha — Tipo: Fecha y hora (o fecha solamente). Opcional: puedes usar la fecha de creación predeterminada."
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,24 @@
+uuid: b6f97892-b8bd-4dd0-a2b0-6f839a598700
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pagina_informativa
+  module:
+    - text
+id: node.pagina_informativa.body
+field_name: body
+entity_type: node
+bundle: pagina_informativa
+label: body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

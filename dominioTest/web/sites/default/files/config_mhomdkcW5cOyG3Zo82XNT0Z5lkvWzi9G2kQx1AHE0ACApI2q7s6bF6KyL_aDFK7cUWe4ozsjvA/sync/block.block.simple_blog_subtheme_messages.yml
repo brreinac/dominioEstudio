@@ -1,0 +1,22 @@
+uuid: 89f74386-7add-4e29-8fcc-cded56514ea2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - simple_blog_subtheme
+_core:
+  default_config_hash: aeqlWs7HwctZeZC7ADcbxfqehJzBRfZKmuZz3DsH3_4
+id: simple_blog_subtheme_messages
+theme: simple_blog_subtheme
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

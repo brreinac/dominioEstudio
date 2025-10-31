@@ -1,0 +1,19 @@
+uuid: 0c29ce79-6563-437a-b2ec-ec12effe95b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_fecha
+    - node.type.entrada_de_blog
+id: node.entrada_de_blog.field_field_fecha
+field_name: field_field_fecha
+entity_type: node
+bundle: entrada_de_blog
+label: field_fecha
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

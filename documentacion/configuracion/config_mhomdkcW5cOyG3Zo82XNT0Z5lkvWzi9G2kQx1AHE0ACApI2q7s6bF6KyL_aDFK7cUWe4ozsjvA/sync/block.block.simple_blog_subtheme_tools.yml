@@ -1,0 +1,27 @@
+uuid: de762304-e30a-4921-8a0e-a483292e2163
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - simple_blog_subtheme
+_core:
+  default_config_hash: 21gTvrC3-X1nBOt2rLuxMV9LqgyW8pnzfKXMeq-dnPI
+id: simple_blog_subtheme_tools
+theme: simple_blog_subtheme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }
